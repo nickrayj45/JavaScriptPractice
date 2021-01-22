@@ -89,14 +89,24 @@
 // var name = "NICK";
 // console.log(name.toLowerCase())
 
-function lifeInWeeks(age) {
-    var yearsRemaining = 90 - age;
-    var days = yearsRemaining * 90;
-    var weeks = yearsRemaining * 52;
-    var months = yearsRemaining * 12;
+// function lifeInWeeks(age) {
+//     var yearsRemaining = 90 - age;
+//     var days = yearsRemaining * 90;
+//     var weeks = yearsRemaining * 52;
+//     var months = yearsRemaining * 12;
 
-    console.log("You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
+//     console.log("You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
+// }
+
+// lifeInWeeks(12)
+
+/*-----------BMI Challenge------------*/
+
+function bmiCalculator(weight, height) {
+    var bmi = weight / Math.pow(height, 2);
+    return Math.round(bmi);
 }
 
-lifeInWeeks(12)
 
+var bmi = bmiCalculator(65, 1.8)
+console.log(bmi);
