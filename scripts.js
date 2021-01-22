@@ -86,5 +86,17 @@
 // console.log(allAthletes)
 // console.log(`${this.name} plays ${this.sport}`)
 
-var name = "Nick";
-console.log(name.slice(0,2))
+// var name = "NICK";
+// console.log(name.toLowerCase())
+
+function lifeInWeeks(age) {
+    var yearsRemaining = 90 - age;
+    var days = yearsRemaining * 90;
+    var weeks = yearsRemaining * 52;
+    var months = yearsRemaining * 12;
+
+    console.log("You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
+}
+
+lifeInWeeks(12)
+
