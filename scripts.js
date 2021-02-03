@@ -102,11 +102,74 @@
 
 /*-----------BMI Challenge------------*/
 
-function bmiCalculator(weight, height) {
-    var bmi = weight / Math.pow(height, 2);
-    return Math.round(bmi);
+// function bmiCalculator(weight, height) {
+//   var bmi = weight / Math.pow(height, 2);
+//   return Math.round(bmi);
+// }
+
+// var bmi = bmiCalculator(65, 1.8);
+// console.log(bmi);
+
+// var fruitArr = ["apple", "mango", "strawberry", "peach"];
+
+// console.log(fruitArr);
+
+// fruitArr.push("pear");
+
+// fruitArr.pop(4);
+
+// for (i = 0; i < fruitArr.length; i++) {
+//   console.log(fruitArr[i]);
+// }
+
+// console.log(fruitArr.indexOf("strawberry"));
+
+// fruitArr.forEach((element) => console.log(element));
+
+// // Leap year challenge
+
+// function isLeap(year) {
+//   if (year & (4 === 0)) {
+//     if (year % 100 === 0) {
+//         if (year % 400 === 0) {
+//             return "Not a leap year."
+//         } else {
+//             return "Not a leap year."
+//         }
+//     }
+//   } else {
+//     return "Not leap year.";
+//   }
+// }
+
+// --------------------Fibonacci Challenge-----------------------------
+
+function fibonacciGenerator(n) {
+  var output = [];
+  if (n === 1) {
+    output = [0];
+  }
+
+  else if (n === 2) {
+    output = [0,1];
+  }
+
+  else {
+    output = [0, 1, 1, 2];
+
+    for (var i=2; i<n; i++) {
+      output.push(output[output.length - 2] + output[output.length - 1]);
+
+    }
+
+
+  }
+
+  return output;
+
+
 }
 
+output = fibonacciGenerator(5);
+console.log(output);
 
-var bmi = bmiCalculator(65, 1.8)
-console.log(bmi);
